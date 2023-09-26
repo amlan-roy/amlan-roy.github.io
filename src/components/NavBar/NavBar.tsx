@@ -15,20 +15,25 @@ const NavBar: React.FC<NavBarProps> = () => {
     setIsOpen((prevState) => !prevState);
   };
 
-  const links = [
-    <Link href={"#about"} className={navLinkClasses}>
-      About
-    </Link>,
-    <Link href={"#experience"} className={navLinkClasses}>
-      Experience
-    </Link>,
-    <Link href={"#work"} className={navLinkClasses}>
-      Work
-    </Link>,
-    <Link href={"#contactMe"} className={navLinkClasses}>
-      Contact Me
-    </Link>,
+  const navLink = [
+    {
+      text: "About",
+      href: "#about",
+    },
+    {
+      text: "Experience",
+      href: "#experience",
+    },
+    {
+      text: "Work",
+      href: "#work",
+    },
+    {
+      text: "Contact Me",
+      href: "#contactMe",
+    },
   ];
+
   return (
     <>
       <div className="h-24 w-full sticky top-0 left-0 flex justify-between items-center p-4 px-6 ">
@@ -38,7 +43,17 @@ const NavBar: React.FC<NavBarProps> = () => {
           </span>
         </Link>
         <div className="gap-10 text-white mx-5 hidden sm:flex">
-          <div className="flex gap-3 items-center">{links}</div>
+          <div className="flex gap-3 items-center">
+            {navLink.map(({ href, text }, index) => (
+              <Link
+                href={href}
+                className={navLinkClasses}
+                key={`nav-element-${index}`}
+              >
+                {text}
+              </Link>
+            ))}
+          </div>
           <Link
             href="/files/resume.pdf"
             download={"amlan-roy-software-dev-resume"}
@@ -67,8 +82,21 @@ const NavBar: React.FC<NavBarProps> = () => {
           }}
         >
           <div className="w-full h-full p-5 py-10 text-white flex flex-col gap-10">
-            {links.map((link) => (
-              <div onClick={toggleDrawer}>{link}</div>
+            {navLink.map(({ href, text }, index) => (
+              <div
+                onClick={toggleDrawer}
+                key={`toggle-drawer-element-${index}`}
+              >
+                {
+                  <Link
+                    href={href}
+                    className={navLinkClasses}
+                    key={`nav-element-${index}`}
+                  >
+                    {text}
+                  </Link>
+                }
+              </div>
             ))}
           </div>
         </Drawer>
