@@ -9,7 +9,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
   const buttonClasses = `${highlightClasses} border border-[#8AFFD5] border-solid p-4 rounded hover:bg-[#8affd43c] active:bg-[#8affd43c] w-fit text-2xl my-32 mx-auto`;
 
   return (
-    <section className="max-w-5xl w-full flex flex-col mt-16 p-6" id="about">
+    <section className="max-w-5xl w-full flex flex-col mt-20 p-6" id="hero">
       <Typography
         variant="body1"
         sx={{ typography: { md: "h5", sm: "h6" } }}
@@ -41,7 +41,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
         web experiences. Currently, I’m focused at using cutting-edge
         technologies to build innovative and scalable web solutions at{" "}
         <a href="https://www.rajasoftwarelabs.com/" target="/">
-          <strong className="text-[#8AFFD5]">RSL.</strong>
+          <strong className="text-[#8AFFD5]">RSL</strong>.
         </a>
       </Typography>
 
