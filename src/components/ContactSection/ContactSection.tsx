@@ -14,7 +14,7 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
   return (
     <section className="max-w-5xl w-full flex flex-col my-5 p-6" id="about">
       <div className="flex w-full md:mb-24 mb-10 items-center">
-        <div className="grow w-full h-[1px] bg-white"></div>
+        <div className="grow w-full h-[1px] bg-gray-200"></div>
         <Typography
           variant="h4"
           mx={3}
@@ -22,7 +22,7 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
         >
           What&apos;s Next?
         </Typography>
-        <div className="grow w-full h-[1px] bg-white"></div>
+        <div className="grow w-full h-[1px] bg-gray-200"></div>
       </div>
 
       <Typography variant="h3" textAlign={"center"} className="text-gray-300">
@@ -33,6 +33,7 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
       <Typography
         variant="body1"
         className="w-full max-w-2xl px-4 text-gray-300 mx-auto"
+        fontWeight={200}
         my={3}
       >
         If you are looking for a dedicated and innovative software engineer who
