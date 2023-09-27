@@ -40,7 +40,7 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
             have real world applications.
           </Typography>
           <Typography variant="body1" mb={3}>
-            Here are a few technologies I've been working with recently:
+            Here are a few technologies I&apos;ve been working with recently:
           </Typography>
           <ul className="list-disc text-[#8AFFD5] columns-2 pl-6">
             <li>
