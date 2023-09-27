@@ -12,7 +12,7 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
   const highlightClasses = "hover:text-[#8AFFD5] focus:text-[#8AFFD5]";
   const buttonClasses = `${highlightClasses} border border-[#8AFFD5] border-solid p-4 rounded hover:bg-[#8affd43c] active:bg-[#8affd43c] w-fit text-2xl my-16 mx-auto`;
   return (
-    <section className="max-w-5xl w-full flex flex-col my-5 p-6" id="about">
+    <section className="max-w-5xl w-full flex flex-col my-5 p-6" id="contactMe">
       <div className="flex w-full md:mb-24 mb-10 items-center">
         <div className="grow w-full h-[1px] bg-gray-200"></div>
         <Typography
