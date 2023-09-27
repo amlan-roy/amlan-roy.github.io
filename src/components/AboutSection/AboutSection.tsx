@@ -9,11 +9,11 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
   return (
     <section className="max-w-5xl w-full flex flex-col my-5 p-6" id="about">
       <div className="flex w-full md:mb-32 mb-6 items-center">
-        <div className="grow w-full h-[1px] bg-white"></div>
+        <div className="grow w-full h-[1px] bg-gray-200"></div>
         <Typography variant="h4" mx={3}>
           About
         </Typography>
-        <div className="grow w-full h-[1px] bg-white"></div>
+        <div className="grow w-full h-[1px] bg-gray-200"></div>
       </div>
       <div className="flex w-full flex-wrap-reverse md:flex-nowrap">
         <div className="mt-6 md:mt-0 text-gray-300 flex flex-col justify-center">
@@ -22,7 +22,7 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
             that I find cool. I am an Information Technology Engineer by
             education and a Software Engineer by profession.
           </Typography>
-          <Typography variant="body1" mb={3}>
+          <Typography variant="body1" mb={3} fontWeight={200}>
             I am currently working on the flagship web apps of{" "}
             <a href="https://www.linkedin.com/in/amlan-roy/" target="/">
               <strong className="text-[#8AFFD5]">LinkedIn</strong>
@@ -34,42 +34,66 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
             ). I also have interest in making mobile apps using frameworks like
             React Native and even native Android.
           </Typography>
-          <Typography variant="body1" mb={3}>
+          <Typography variant="body1" mb={3} fontWeight={200}>
             I love experimenting with and learning new technologies that I find
             cool. I love solving complex problems and creating solutions that
             have real world applications.
           </Typography>
-          <Typography variant="body1" mb={3}>
+          <Typography variant="body1" mb={3} fontWeight={200}>
             Here are a few technologies I&apos;ve been working with recently:
           </Typography>
           <ul className="list-disc text-[#8AFFD5] columns-2 pl-6">
             <li>
-              <Typography variant="body1" className="text-gray-300">
+              <Typography
+                variant="body1"
+                className="text-gray-300"
+                fontWeight={200}
+              >
                 JavaScript (ES6+)
               </Typography>
             </li>
             <li>
-              <Typography variant="body1" className="text-gray-300">
+              <Typography
+                variant="body1"
+                className="text-gray-300"
+                fontWeight={200}
+              >
                 TypeScript
               </Typography>
             </li>
             <li>
-              <Typography variant="body1" className="text-gray-300">
+              <Typography
+                variant="body1"
+                className="text-gray-300"
+                fontWeight={200}
+              >
                 EmberJS
               </Typography>
             </li>
             <li>
-              <Typography variant="body1" className="text-gray-300">
+              <Typography
+                variant="body1"
+                className="text-gray-300"
+                fontWeight={200}
+              >
                 ReactJS
               </Typography>
             </li>
             <li>
-              <Typography variant="body1" className="text-gray-300">
+              <Typography
+                variant="body1"
+                className="text-gray-300"
+                fontWeight={200}
+              >
                 NextJS
               </Typography>
             </li>
             <li>
-              <Typography variant="body1" className="text-gray-300">
+              <Typography
+                variant="body1"
+                className="text-gray-300"
+                fontWeight={200}
+              >
                 Node.js
               </Typography>
             </li>

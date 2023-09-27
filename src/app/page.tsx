@@ -1,5 +1,6 @@
 import AboutSection from "@/components/AboutSection/AboutSection";
 import ContactSection from "@/components/ContactSection/ContactSection";
+import Footer from "@/components/Footer/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import NavBar from "@/components/NavBar/NavBar";
 import Image from "next/image";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ContactSection />
+      <Footer />
     </main>
   );
 }
