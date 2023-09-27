@@ -9,7 +9,7 @@ type NavBarProps = {};
 const NavBar: React.FC<NavBarProps> = () => {
   const highlightClasses = "hover:text-[#8AFFD5] focus:text-[#8AFFD5]";
   const navLinkClasses = `${highlightClasses} transition-all`;
-  const buttonClasses = `${highlightClasses} border border-[#8AFFD5] border-solid p-3 rounded hover:bg-[#8affd43c] active:bg-[#8affd43c]`;
+  const buttonClasses = `${highlightClasses} border border-[#8AFFD5] border-solid p-3 rounded hover:bg-[#8affd43c] active:bg-[#8affd43c] text-center`;
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
@@ -63,12 +63,7 @@ const NavBar: React.FC<NavBarProps> = () => {
         </Link>
       </div>
 
-      <button
-        onClick={() => {
-          toggleDrawer();
-        }}
-        className="text-white sm:hidden"
-      >
+      <button onClick={toggleDrawer} className="text-white sm:hidden">
         <MenuIcon />
       </button>
       <Drawer
@@ -94,6 +89,14 @@ const NavBar: React.FC<NavBarProps> = () => {
               }
             </div>
           ))}
+          <Link
+            href="/files/resume.pdf"
+            download={"amlan-roy-software-dev-resume"}
+            target="/"
+            className={buttonClasses}
+          >
+            <span>Resume</span>
+          </Link>
         </div>
       </Drawer>
     </div>
