@@ -23,9 +23,16 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
             education and a Software Engineer by profession.
           </Typography>
           <Typography variant="body1" mb={3}>
-            I am currently working on the flagship web apps of LinkedIn (as a
-            contractor via RSL). I also have interest in making mobile apps
-            using frameworks like React Native and even native Android.
+            I am currently working on the flagship web apps of{" "}
+            <a href="https://www.linkedin.com/in/amlan-roy/" target="/">
+              <strong className="text-[#8AFFD5]">LinkedIn</strong>
+            </a>{" "}
+            (as a contractor via{" "}
+            <a href="https://www.rajasoftwarelabs.com/" target="/">
+              <strong className="text-[#8AFFD5]">RSL</strong>
+            </a>
+            ). I also have interest in making mobile apps using frameworks like
+            React Native and even native Android.
           </Typography>
           <Typography variant="body1" mb={3}>
             I love experimenting with and learning new technologies that I find
