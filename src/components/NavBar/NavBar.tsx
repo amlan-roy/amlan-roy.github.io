@@ -35,7 +35,7 @@ const NavBar: React.FC<NavBarProps> = () => {
   ];
 
   return (
-    <div className="h-24 w-full sticky top-0 left-0 flex justify-between items-center p-4 px-6 z-50  bg-[#0A192F]">
+    <nav className="h-24 w-full sticky top-0 left-0 flex justify-between items-center p-4 px-6 z-50  bg-[#0A192F]">
       <Link href={"/"}>
         <span className={`text-4xl font-bold text-white ${highlightClasses}`}>
           A
@@ -99,7 +99,7 @@ const NavBar: React.FC<NavBarProps> = () => {
           </Link>
         </div>
       </Drawer>
-    </div>
+    </nav>
   );
 };
 export default NavBar;

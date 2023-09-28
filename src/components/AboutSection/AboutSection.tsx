@@ -7,7 +7,10 @@ type AboutSectionProps = {};
 
 const AboutSection: React.FC<AboutSectionProps> = () => {
   return (
-    <section className="max-w-5xl w-full flex flex-col my-5 p-6" id="about">
+    <section
+      className="max-w-5xl w-full flex flex-col my-5 p-6 scroll-mt-24"
+      id="about"
+    >
       <div className="flex w-full md:mb-32 mb-6 items-center">
         <div className="grow w-full h-[1px] bg-gray-200"></div>
         <Typography variant="h4" mx={3}>
