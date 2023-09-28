@@ -4,7 +4,7 @@ import ExperienceSection from "@/components/ExperienceSection/ExperienceSection"
 import Footer from "@/components/Footer/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import NavBar from "@/components/NavBar/NavBar";
-import Image from "next/image";
+import ProjectsSection from "@/components/ProjectsSection/ProjectsSection";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ExperienceSection />
+      <ProjectsSection />
       <ContactSection />
       <Footer />
     </main>

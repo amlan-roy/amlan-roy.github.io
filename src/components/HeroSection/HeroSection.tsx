@@ -9,7 +9,10 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
   const buttonClasses = `${highlightClasses} border border-[#8AFFD5] border-solid p-4 rounded hover:bg-[#8affd43c] active:bg-[#8affd43c] w-fit text-2xl my-32 mx-auto`;
 
   return (
-    <section className="max-w-5xl w-full flex flex-col mt-20 p-6" id="hero">
+    <section
+      className="max-w-5xl w-full flex flex-col mt-20 p-6 scroll-mt-24 "
+      id="hero"
+    >
       <Typography
         variant="body1"
         sx={{ typography: { md: "h5", sm: "h6" } }}

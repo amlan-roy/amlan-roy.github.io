@@ -46,7 +46,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
   } = JOBS_DATA[activeJobIndex];
   return (
     <section
-      className="max-w-5xl w-full flex flex-col my-5 p-6"
+      className="max-w-5xl w-full flex flex-col my-5 p-6 scroll-mt-24"
       id="experience"
     >
       <div className="flex w-full md:mb-24 mb-10 items-center">
