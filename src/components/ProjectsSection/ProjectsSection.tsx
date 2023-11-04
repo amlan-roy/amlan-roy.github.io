@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { ReactElement } from "react";
 import Typography from "@mui/material/Typography";
 import LaunchIcon from "@mui/icons-material/Launch";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 type ProjectsSectionProps = {};
 
@@ -20,11 +21,31 @@ type TProject = {
 
 const PROJECTS: TProject[] = [
   {
+    img: "files/code-korbo-demo-v1.gif",
+    title: "Code Korbo",
+    description:
+      "An online coding platform where you can practice different DSA problems in multiple programming languages.",
+    technologies: ["Next.js", "React.js", "Judge0", "Firebase"],
+    label: "Featured Project",
+    links: [
+      {
+        icon: <LaunchIcon />,
+        ariaLabel: "The deployed project on vercel.",
+        url: "https://code-korbo-web.vercel.app/",
+      },
+      {
+        icon: <GitHubIcon />,
+        ariaLabel: "The Github URL of this project.",
+        url: "https://github.com/amlan-roy/code-korbo-web",
+      },
+    ],
+  },
+  {
     img: "files/fit-mitra-image-v1.jpg",
     title: "Fit Mitra",
     description:
       "An android app that enables users to monitor and improve their exercise performance at home by analyzing the user’s posture and movement by using AI on the camera input and provides real-time feedback and guidance",
-    technologies: ["Kotlin", "Android", "Firebase", "MLKit"],
+    technologies: ["Kotlin", "Android", "Firebase", "MLKit", "Open Source"],
     label: "Featured Project",
     links: [
       {
@@ -35,12 +56,23 @@ const PROJECTS: TProject[] = [
     ],
   },
   {
-    img: "files/code-korbo-image-v1.png",
-    title: "Code Korbo",
+    img: "files/portfolio-image-v1.jpeg",
+    title: "Personal Portfolio Website",
     description:
-      "An online coding platform where you can practice different DSA problems in different languages.",
-    technologies: ["Next js", "React js", "Judge0", "Firebase"],
-    label: "In Progress",
+      "An Personal Portfolio website made using Next.js 13 and deployed on Github Pages",
+    technologies: ["Next.js", "React.js", "Github Pages", "Open Source"],
+    links: [
+      {
+        icon: <LaunchIcon />,
+        ariaLabel: "The deployed project on Github Pages.",
+        url: "https://amlan-roy.github.io/",
+      },
+      {
+        icon: <GitHubIcon />,
+        ariaLabel: "The Github URL of this project.",
+        url: "https://github.com/amlan-roy/amlan-roy.github.io",
+      },
+    ],
   },
 ];
 
@@ -74,7 +106,7 @@ const ProjectCard = ({
         <div className="flex flex-wrap gap-3">
           {technologies.map((technology, techIndex) => (
             <Typography
-              className="sm:text-gray-400"
+              className="sm:text-gray-400 bg-[#ffffff14] hover:shadow-customGlow rounded-full p-1 px-2 text-sm"
               key={`project-${index}-technology-${techIndex}`}
             >
               {technology}
@@ -143,7 +175,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
         </Typography>
         <div className="grow w-full h-[1px] bg-gray-200"></div>
       </div>
-      <div className="flex flex-col w-full max-w-5xl gap-6 px-14 sm:p-0 items-center h-auto">
+      <div className="flex flex-col w-full max-w-5xl gap-6 p-0 items-center h-auto">
         {PROJECTS.map((project, index) => (
           <ProjectCard
             projectData={project}
