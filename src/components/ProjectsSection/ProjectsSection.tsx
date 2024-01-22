@@ -84,7 +84,7 @@ const ProjectCard = ({
   index: number;
 }) => {
   const ProjectDescription = (
-    <div className="flex w-full sm:w-auto flex-col gap-4 m-0 sm:m-4 p-4 sm:p-0 sm:bg-transparent bg-[#000000ce]">
+    <div className="flex w-full  sm:w-auto flex-col gap-4 m-0 sm:m-4 p-4 sm:p-0 sm:bg-transparent bg-[#000000ce]">
       {label && (
         <Typography variant={"h6"} className="text-[#8AFFD5]">
           {label}
